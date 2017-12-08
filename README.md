@@ -17,7 +17,7 @@ We'll also learn a little bit about React props and the children prop.
 In this lesson we'll learn the basics of using JSX with React. In addition to the noted className difference, there are a number of other [differences with attributes in JSX than those in React](https://reactjs.org/docs/dom-elements.html).
 
 
-[04. Create Custom React Components](https://github.com/xgirma/intro-to-the-beginner-guid-to-ractjs/tree/ch.02/chapters/ch.03)
+[04. Create Custom React Components](https://github.com/xgirma/intro-to-the-beginner-guid-to-ractjs/tree/ch.04/chapters/ch.04)
 
 Just like in regular JavaScript, when you want to `reuse code`, you create a `function`. With React, you `create components`. In this lesson we'll walk through the process of creating custom React components and you'll walk away with a deep understanding of how to create and use basic components to `compose` a larger component you render.
 
