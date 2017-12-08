@@ -1,0 +1,23 @@
+{
+  "name": "intro-to-the-geginner-guid-to-ractjs",
+  "version": "1.0.0",
+  "description": "In this course, we'll start from the very basics of React, and give you everything you need to know to start developing web applications with the hottest framework of the web. By Kent C. Dodds",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xgirma/intro-to-the-geginner-guid-to-ractjs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xgirma/intro-to-the-geginner-guid-to-ractjs/issues"
+  },
+  "homepage": "https://github.com/xgirma/intro-to-the-geginner-guid-to-ractjs#readme",
+  "dependencies": {
+    "react": "^16.2.0"
+  }
+}
