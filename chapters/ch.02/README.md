@@ -64,11 +64,47 @@ Let's go ahead and take a look at `what element is`.
 `props` is actually pretty important. It has a `children prop`, and that's our hello world. Then it has a `className prop`, and that's the container.
  It looks like we've got a merge of `{className: 'container'}` here with whatever we pass here (`Hello World`).  We can actually pass any number of arguments for the rest of this API call. `Goodbye world`.
  
+ ```html
+<div id="root"></div>
+<script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+
+<script type="text/javascript">
+    const rootElement = document.getElementById('root')
+    const element = React.createElement(
+      'div',
+      {className :'container'},
+      'Hello World',
+      'Goodbye World'
+    )
+    console.log(element)
+
+    ReactDOM.render(element, rootElement)
+</script>
+```
+ 
  <img width="734" alt="screen shot 2017-12-07 at 11 21 44 pm" src="https://user-images.githubusercontent.com/5876481/33755406-74955e6e-dba5-11e7-986f-4936af15ee7f.png">
  
 If we see in our `props`, we have children as an array that has both of those things (`Hello World` and `Goodbye World`).
 
-What's interesting here is we could actually remove these, create a children prop here, and past them into there.
+What's interesting here is we could create a `children prop`.
+
+```html
+<div id="root"></div>
+<script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+
+<script type="text/javascript">
+    const rootElement = document.getElementById('root')
+    const element = React.createElement(
+      'div',
+      {className :'container', children: ['Hello World', 'Goodbye World']}
+    )
+    console.log(element)
+
+    ReactDOM.render(element, rootElement)
+</script>
+```
 
  <img width="734" alt="screen shot 2017-12-07 at 11 21 44 pm" src="https://user-images.githubusercontent.com/5876481/33755406-74955e6e-dba5-11e7-986f-4936af15ee7f.png">
  
