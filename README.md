@@ -6,7 +6,7 @@ Source: [link](https://egghead.io/lessons/react-introduction-to-the-beginner-s-g
 
 ## Chapters
 
-[02. Write Hello World with raw React APIs]()
+[02. Write Hello World with raw React APIs](https://github.com/xgirma/intro-to-the-beginner-guid-to-ractjs/tree/ch.02/chapters/ch.02)
 
 In this lesson we'll learn how to use raw React APIs to create the most basic Hello World example. React defines it’s own `createElement` function that we will see works similar to `document.createElement`. And in place of `appendChild` we will use `ReactDOM's render` function.
 
