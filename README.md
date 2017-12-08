@@ -21,3 +21,6 @@ In this lesson we'll learn the basics of using JSX with React. In addition to th
 
 Just like in regular JavaScript, when you want to `reuse code`, you create a `function`. With React, you `create components`. In this lesson we'll walk through the process of creating custom React components and you'll walk away with a deep understanding of how to create and use basic components to `compose` a larger component you render.
 
+[05. Validate Custom React Component Props with PropTypes](https://github.com/xgirma/intro-to-the-beginner-guid-to-ractjs/tree/ch.05/chapters/ch.05)
+
+In this lesson we'll learn about how you can use the `prop-types` module to validate a custom React component's `props`.
