@@ -284,12 +284,7 @@ For components declared as classes like this, we can continue to specify our Pro
 It works exactly the same way.
 
 ### production version React
-Let's swap the development version of react to the production version.
-
-```html
-<script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
-<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
-```
+Let's swap the development version of react to the production versio
 
 ```html
 <div id="root"></div>
