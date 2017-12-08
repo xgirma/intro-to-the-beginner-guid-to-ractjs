@@ -12,4 +12,8 @@ In this lesson we'll learn how to use raw React APIs to create the most basic He
 
 We'll also learn a little bit about React props and the children prop.
 
+[03. Use JSX with React](https://github.com/xgirma/intro-to-the-beginner-guid-to-ractjs/tree/ch.02/chapters/ch.03)
+
+In this lesson we'll learn the basics of using JSX with React. In addition to the noted className difference, there are a number of other [differences with attributes in JSX than those in React](https://reactjs.org/docs/dom-elements.html).
+
 
