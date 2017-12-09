@@ -36,3 +36,7 @@ In this lesson, we'll learn how we can `call ReactDOM.render repeatedly` with `b
 [08. Style React Components](https://github.com/xgirma/intro-to-the-beginner-guid-to-ractjs/tree/ch.08/chapters/ch.08)
 
 In this lesson we'll learn about how you can style react components using the `style` prop and `className` prop. We'll create a component that composes these props together nicely and talk about some of the shortcomings of these as well.
+
+[09. Use Event Handlers with React](https://github.com/xgirma/intro-to-the-beginner-guid-to-ractjs/tree/ch.09/chapters/ch.09)
+
+In this lesson we'll learn about React's synthetic event system which allows React to use the same event system regardless of the platform (whether you're using react-native or react-dom for example). We'll see how you `attach events directly to elements` and React takes care of `event delegatio`n and `optimization` for you.
