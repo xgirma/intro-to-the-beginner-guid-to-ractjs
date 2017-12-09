@@ -126,7 +126,7 @@ Instead of this if statement, `we could do a ternary` where we'd say return mess
 </script>
 ```
 
-### inside a <div/>
+### inside a div
 When you start into JSX, you need to `open up some interpolation` to do any of the JavaScript stuff. This is why very often in React code in the `render method`, `you'll see the use of ternaries`, because the curly braces must accept an expression in there.
 
 > That's why you'll see ternaries, because **you can't have an if statement in here**.
