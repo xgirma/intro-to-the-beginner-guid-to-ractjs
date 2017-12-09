@@ -32,3 +32,7 @@ In this lesson we'll learn about how you can use the `prop-types` module to vali
 [07. Re-render a React Application](https://github.com/xgirma/intro-to-the-beginner-guid-to-ractjs/tree/ch.06/chapters/ch.06)
 
 In this lesson, we'll learn how we can `call ReactDOM.render repeatedly` with `brand new React Elements` and React will `preserve element focus` and only do the minimal required DOM operations for the re-render.
+
+[08. Style React Components](https://github.com/xgirma/intro-to-the-beginner-guid-to-ractjs/tree/ch.07/chapters/ch.07)
+
+In this lesson we'll learn about how you can style react components using the `style` prop and `className` prop. We'll create a component that composes these props together nicely and talk about some of the shortcomings of these as well.
