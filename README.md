@@ -29,4 +29,6 @@ In this lesson we'll learn about how you can use the `prop-types` module to vali
  
  In this lesson we explore JSX a little further and solidify in our minds that JSX is simply syntax sugar on top of a fairly simple React API: `React.createElement`.
  
- 
+[07. Re-render a React Application](https://github.com/xgirma/intro-to-the-beginner-guid-to-ractjs/tree/ch.06/chapters/ch.06)
+                                                                                                                                                                                                                   
+                                                                                                                                                                                                                   In this lesson, we'll learn how we can `call ReactDOM.render repeatedly` with `brand new React Elements` and React will `preserve element focus` and only do the minimal required DOM operations for the re-render.
