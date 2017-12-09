@@ -24,3 +24,9 @@ Just like in regular JavaScript, when you want to `reuse code`, you create a `fu
 [05. Validate Custom React Component Props with PropTypes](https://github.com/xgirma/intro-to-the-beginner-guid-to-ractjs/tree/ch.05/chapters/ch.05)
 
 In this lesson we'll learn about how you can use the `prop-types` module to validate a custom React component's `props`.
+
+[06. Conditionally Render A React Component](https://github.com/xgirma/intro-to-the-beginner-guid-to-ractjs/tree/ch.06/chapters/ch.06)
+ 
+ In this lesson we explore JSX a little further and solidify in our minds that JSX is simply syntax sugar on top of a fairly simple React API: `React.createElement`.
+ 
+ 
