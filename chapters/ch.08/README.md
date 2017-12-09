@@ -323,6 +323,33 @@ Now, this box works exactly as it had before only now the relevant styling infor
 
 We can still `pass overrides` for the in-line styles and classNames. This makes it really `nicely composable`.
 
+```html
+<script type="text/babel">
+  function Box({style, size, className='', ...rest}) {
+    const sizeClassName = size ? `box--${size}`: ''
+    return (
+      <div>
+        <div
+          className={`box ${className}${sizeClassName}`}
+          style = {{paddingLeft: 20, ...style}}
+          {...rest}
+        >box</div>
+      </div>
+    )
+  }
+
+  const element = (
+    <div>
+        <Box size='small' style={{backgroundColor: 'lightblue'}}>small box</Box>
+        <Box size='box--medium' style={{backgroundColor: 'pink'}}>small box</Box>
+        <Box size='box--large' style={{backgroundColor: 'orange'}}>small box</Box>
+    </div>
+  )
+
+  ReactDOM.render(element, document.getElementById('root'))
+</script>
+```
+
 ## Summary
 In review, to style a React component, you can use the `className` prop to assign classNames used in regular CSS styles. 
 
