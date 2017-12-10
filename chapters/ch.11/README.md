@@ -37,23 +37,21 @@ If I go ahead and add a callback here inside of `setState` call and I `console.l
 
 ```javascript
 handleRunClick = () => {
-        this.setState(state => {
-          if (state.running) {
-            clearInterval(this.timer)
-          } else {
-            const startTime =
-              Date.now() - this.state.lapse
-            this.timer = setInterval(() => {
-              this.setState({
-                lapse: Date.now() - startTime,
-              }, () => {
-                console.log(this.state.lapse)
-              })
-            })
-          }
-          return {running: !state.running}
-        })
-      }
+  this.setState(state => {
+    if (state.running) {
+      clearInterval(this.timer)
+    } else {
+      const startTime = Date.now() - this.state.lapse
+      
+      this.timer = setInterval(() => {
+        this.setState({
+        lapse: Date.now() - startTime,
+        }, () => { console.log(this.state.lapse) })
+      })
+    }
+    return {running: !state.running}
+  })
+}
 ```
 
 :warning: Then if I click on `Show Stop Watch to un-show it, we're actually going to get this `warning`. :warning:
@@ -69,9 +67,9 @@ The problem is that the **setInterval** is never cleared, so we need to go ahead
 We'll simply say **clearInterval(this.timer)**.
 
 ```javascript
-      componentWillUnmount() {
-        clearInterval(this.timer)
-      }
+componentWillUnmount() {
+  clearInterval(this.timer)
+}
 ```
 
 Now, we can start, and then remove the stopwatch, and it's totally gone. We don't see the logs anymore and we don't get that warning.
