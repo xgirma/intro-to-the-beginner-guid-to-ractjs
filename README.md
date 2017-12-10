@@ -52,3 +52,7 @@ In this lesson we'll build a stopwatch component that maintains its own `state`.
 [12. Use Class Components with React](https://github.com/xgirma/intro-to-the-beginner-guid-to-ractjs/tree/ch.12/chapters/ch.12)
 
 In this lesson we'll look at a few ways to deal with issues around **this** when writing class components with React. We'll eventually land at **Public Class Fields syntax** which is a stage 3 proposal in the ECMAScript standardization process.
+
+[13. Manipulate the DOM with React refs](https://github.com/xgirma/intro-to-the-beginner-guid-to-ractjs/tree/ch.12/chapters/ch.12)
+
+Often you'll find there's a jQuery plugin or JavaScript library which needs access to DOM nodes to work in your application. Other times you need access to the DOM node directly to get the value of form fields or for other reasons. In this lesson we'll learn how to do this using React's ref prop.
