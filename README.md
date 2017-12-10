@@ -44,3 +44,7 @@ In this lesson we'll learn about React's synthetic event system which allows Rea
 [10. Use Component State with React](https://github.com/xgirma/intro-to-the-beginner-guid-to-ractjs/tree/ch.10/chapters/ch.10)
 
 In this lesson we'll build a stopwatch component that maintains its own `state`. We'll start by creating the static UI, then take the dynamic parts and accept them as props. After that we'll refactor that to state and add event handlers to update the state.
+
+[11. Stop Memory Leaks with componentWillUnmount Lifecycle Method in React](https://github.com/xgirma/intro-to-the-beginner-guid-to-ractjs/tree/ch.11/chapters/ch.11)
+ 
+ In this lesson we'll take a stopwatch component we built in another lesson and identify and fix a memory leak.
