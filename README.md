@@ -40,3 +40,7 @@ In this lesson we'll learn about how you can style react components using the `s
 [09. Use Event Handlers with React](https://github.com/xgirma/intro-to-the-beginner-guid-to-ractjs/tree/ch.09/chapters/ch.09)
 
 In this lesson we'll learn about React's synthetic event system which allows React to use the same event system regardless of the platform (whether you're using react-native or react-dom for example). We'll see how you `attach events directly to elements` and React takes care of `event delegatio`n and `optimization` for you.
+
+[10. Use Component State with React](https://github.com/xgirma/intro-to-the-beginner-guid-to-ractjs/tree/ch.10/chapters/ch.10)
+
+In this lesson we'll build a stopwatch component that maintains its own `state`. We'll start by creating the static UI, then take the dynamic parts and accept them as props. After that we'll refactor that to state and add event handlers to update the state.

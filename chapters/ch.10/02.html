@@ -1,0 +1,34 @@
+<body>
+<div id="root"></div>
+<script src="https://unpkg.com/react@16.0.0/umd/react.development.js"></script>
+<script src="https://unpkg.com/react-dom@16.0.0/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
+<script type="text/babel">
+    function StopWatch() {
+      const buttonStyles = {
+        border: '1px solid #ccc',
+        background: '#fff',
+        fontSize: '1em',
+        padding: 15,
+        margin: 5,
+        width: 100,
+      }
+
+      const labelStyles = {
+        fontSize: '2em',
+        display: 'block'
+      }
+
+      return (
+        <div style={{textAlign: 'center'}}>
+            <label style={labelStyles}>0 ms</label>
+            <button style={buttonStyles}>Start</button>
+            <button style={buttonStyles}>Clear</button>
+        </div>
+      )
+    }
+
+    const element = <StopWatch />
+    ReactDOM.render(element, document.getElementById('root'))
+</script>
+</body>
