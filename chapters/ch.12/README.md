@@ -318,7 +318,7 @@ We can actually do a little bit better by `not creating this handleClick method 
 
 Everything is working yet again, just perfect.
 
-### lexical this
+### lexical this from arrow function
 But having this **bind** on here is super annoying also. So we're going to get rid of that and just use the **lexical this that arrow functions give us**.
 
 ```html
