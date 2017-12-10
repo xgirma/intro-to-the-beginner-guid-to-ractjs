@@ -354,10 +354,3 @@ But having this **bind** on here is super annoying also. So we're going to get r
 ## Summary
 Now we've been able to clean up our `render` method and avoid a potential performance bottleneck by moving our event handler `to the class body` and using public class fields. We got rid of that `constructor`. We're using this `public class field` syntax. Then we're using an `arrow function to avoid issues with using this` inside of our event handler.
  
- 
- 
-
-
-
-
-
