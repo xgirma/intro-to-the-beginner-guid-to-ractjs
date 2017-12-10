@@ -48,3 +48,7 @@ In this lesson we'll build a stopwatch component that maintains its own `state`.
 [11. Stop Memory Leaks with componentWillUnmount Lifecycle Method in React](https://github.com/xgirma/intro-to-the-beginner-guid-to-ractjs/tree/ch.11/chapters/ch.11)
  
  In this lesson we'll take a stopwatch component we built in another lesson and identify and fix a memory leak.
+ 
+[12. Use Class Components with React](https://github.com/xgirma/intro-to-the-beginner-guid-to-ractjs/tree/ch.12/chapters/ch.12)
+
+In this lesson we'll look at a few ways to deal with issues around **this** when writing class components with React. We'll eventually land at **Public Class Fields syntax** which is a stage 3 proposal in the ECMAScript standardization process.
