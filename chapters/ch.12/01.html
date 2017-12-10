@@ -7,15 +7,31 @@
     class Counter extends React.Component {
       constructor(...args){
         super(...args)
-        this.state = {count: 0}
+        this.state = {
+          count: 0,
+          color: 'red'
+        }
       }
 
       render() {
+        const buttonStyles = {
+          border: '1px solid #ccc',
+          background: '#fff',
+          fontSize: '1em',
+          padding: 15,
+          margin: 5,
+          width: 100,
+        }
+
+        console.log(this.state.count)
+
         return(
-          <button onClick={
-            () => this.setState(
-              ( {count}) => ( {count: count + 1, } )
-            )
+          <button style={buttonStyles}
+
+                  onClick={
+                    () => this.setState(
+                      ( {count}) => ( {count: count + 1, } )
+                    )
           }>
             {this.state.count}
           </button>
