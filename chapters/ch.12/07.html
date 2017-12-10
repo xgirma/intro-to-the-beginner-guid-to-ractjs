@@ -7,10 +7,8 @@
   class Counter extends React.Component {
     constructor(...args){
       super(...args)
-      this.state = {
-        count: 0,
-        color: 'red'
-      }
+      this.state = {count: 0}
+      this.handleClick = this.handleClick.bind(this)
     }
 
     handleClick() {
@@ -26,7 +24,7 @@
 
       return(
         <button style={buttonStyles}
-                onClick={this.handleClick.bind(this)}>
+                onClick={this.handleClick}>
           {this.state.count}
         </button>
       )

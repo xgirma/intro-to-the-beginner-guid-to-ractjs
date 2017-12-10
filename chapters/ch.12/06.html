@@ -26,7 +26,7 @@
 
       return(
         <button style={buttonStyles}
-                onClick={this.handleClick}>
+                onClick={this.handleClick.bind(this)}>
           {this.state.count}
         </button>
       )

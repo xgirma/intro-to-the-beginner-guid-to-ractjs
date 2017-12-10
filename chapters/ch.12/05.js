@@ -5,7 +5,7 @@ var bob = {
   }
 }
 
-var greetFn = bob.greet;
+var greetFn = bob.greet.bind(bob);
 
 console.log(greetFn('Girma'))
-// Hi Girma, my name is undefined!
+// Hi Girma, my name is Bob!
