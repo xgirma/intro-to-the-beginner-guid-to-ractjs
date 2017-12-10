@@ -56,7 +56,7 @@ handleRunClick = () => {
 
 :warning: Then if I click on `Show Stop Watch to un-show it, we're actually going to get this `warning`. :warning:
 
-![ezgif com-video-to-gif 7](https://user-images.githubusercontent.com/5876481/33801854-7178a4d8-dd1d-11e7-8c73-8250d383d990.gif)
+![ezgif com-video-to-gif 8](https://user-images.githubusercontent.com/5876481/33801919-5622d03a-dd1f-11e7-9b2f-5594771320e1.gif)
 
 It actually isn't doing anything wrong in our application, but it is indicative of a **memory leak**. That's exactly what's happening here.
 
