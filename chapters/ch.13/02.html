@@ -44,12 +44,12 @@
   class Tilt extends React.Component {
     componentDidMount() {
       console.log(this.rootNode)
-      // VanillaTilt.init(this.rootNode, {
-      //   max: 25,
-      //   speed: 400,
-      //   glare: true,
-      //   'max-glare': 0.5,
-      // })
+      VanillaTilt.init(this.rootNode, {
+        max: 25,
+        speed: 400,
+        glare: true,
+        'max-glare': 0.5,
+      })
     }
     render() {
       return (
