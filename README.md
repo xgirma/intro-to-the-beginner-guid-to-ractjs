@@ -56,3 +56,7 @@ In this lesson we'll look at a few ways to deal with issues around **this** when
 [13. Manipulate the DOM with React refs](https://github.com/xgirma/intro-to-the-beginner-guid-to-ractjs/tree/ch.13/chapters/ch.13)
 
 Often you'll find there's a jQuery plugin or JavaScript library `which needs access to DOM nodes to work in your application`. **Other times you need access to the DOM node directly to get the value of form fields or for other reasons**. In this lesson we'll learn how to do this using React's ref prop.
+
+[14. Make Basic Forms with React](https://github.com/xgirma/intro-to-the-beginner-guid-to-ractjs/tree/ch.14/chapters/ch.14)
+
+In this lesson we'll take a look at how to make a `basic form with React`. We'll see how to use the `onSubmit event to prevent the default submit behavior of forms` with React and then how to use `that event to get the values from the form`. We'll also see how you can use the `React ref prop to get the value of form elements` as well.
