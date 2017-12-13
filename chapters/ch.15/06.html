@@ -6,15 +6,13 @@
 
 <script type="text/babel">
   class NameForm extends React.Component {
-    state = {error: null}
+    state = {error: this.props.getErrorMessage('')}
 
     handleSubmit = event => {
       event.preventDefault()
       const value = event.target.elements.username.value
       const error = this.props.getErrorMessage(value,)
-      if (error) {
-        alert(`error: ${error}`)
-      } else {
+      if (error) {alert(`error: ${error}`)} else {
         alert(`success: ${value}`)
       }
     }
@@ -23,12 +21,6 @@
       const {value} = event.target
       this.setState({
         error: this.props.getErrorMessage(value)
-      })
-    }
-
-    componentDidMount() {
-      this.setState({
-        error: this.props.getErrorMessage('')
       })
     }
 

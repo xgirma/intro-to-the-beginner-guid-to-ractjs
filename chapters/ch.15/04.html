@@ -26,6 +26,12 @@
       })
     }
 
+    componentDidMount() {
+      this.setState({
+        error: this.props.getErrorMessage('')
+      })
+    }
+
     render() {
       const {error} = this.state
       return (

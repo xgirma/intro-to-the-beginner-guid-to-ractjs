@@ -40,7 +40,7 @@
             Name:
             <input type="text" name="username" onChange={this.handleChange}/>
           </label>
-
+          { error ? <div style={{color:'red'}}>{error}</div> : null}
           <button disabled={Boolean(error)} type="submit">Submit</button>
         </form>
       )
