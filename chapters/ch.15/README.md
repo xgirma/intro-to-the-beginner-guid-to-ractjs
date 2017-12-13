@@ -164,7 +164,7 @@ We also initialize our state in `componentDidMount`. Instead of setting state in
   }
 ```
 
-### Render error message
+### render error message
 ```html
 <script type="text/babel">
   class NameForm extends React.Component {
