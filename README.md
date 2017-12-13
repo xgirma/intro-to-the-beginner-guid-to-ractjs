@@ -60,3 +60,7 @@ Often you'll find there's a jQuery plugin or JavaScript library `which needs acc
 [14. Make Basic Forms with React](https://github.com/xgirma/intro-to-the-beginner-guid-to-ractjs/tree/ch.14/chapters/ch.14)
 
 In this lesson we'll take a look at how to make a `basic form with React`. We'll see how to use the `onSubmit event to prevent the default submit behavior of forms` with React and then how to use `that event to get the values from the form`. We'll also see how you can use the `React ref prop to get the value of form elements` as well.
+
+[15. Make Dynamic Forms with React](https://github.com/xgirma/intro-to-the-beginner-guid-to-ractjs/tree/ch.15/chapters/ch.15)
+
+Let's talk about how to use the `onChange` prop on an input to do **dynamic and custom validation of a form** `as the user makes changes` to the input.
