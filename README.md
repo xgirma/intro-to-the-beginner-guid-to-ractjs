@@ -64,3 +64,7 @@ In this lesson we'll take a look at how to make a `basic form with React`. We'll
 [15. Make Dynamic Forms with React](https://github.com/xgirma/intro-to-the-beginner-guid-to-ractjs/tree/ch.15/chapters/ch.15)
 
 Let's talk about how to use the `onChange` prop on an input to do **dynamic and custom validation of a form** `as the user makes changes` to the input.
+
+[16. Controlling Form Values with React](https://github.com/xgirma/intro-to-the-beginner-guid-to-ractjs/tree/ch.16/chapters/ch.16)
+
+In this lesson we'll talk about controlling the value for `inputs`, `textareas`, and `select` elements. We'll see `how to manage the state` ourselves `while still allowing the user to update the values themselves`.
