@@ -98,13 +98,13 @@ What we want to do is we want to **synchronize the state of all of these things*
 :monkey: To be able to do this, we need to control the state of the value of each of these inputs, and then update that state ourselves. :key:
 
 ### controlling input and text values
-[1.] Let's start out by `controlling the input and the text area values`. To do that, `we need to keep that state somewhere ourselves`.
+**[1.]** Let's start out by `controlling the input and the text area values`. To do that, `we need to keep that state somewhere ourselves`.
 
 ```javascript
 state = {commaSeparated: '', multiline: ''}
 ```
 
-[2.] We need to explicitly set the value on these input fields. 1.1 `const {commaSeparated, multiline} = this.state` 1.2. `value={commaSeparated}` 1.3. `value={multiline}`
+**[2.]** We need to explicitly set the value on these input fields. 1.1 `const {commaSeparated, multiline} = this.state` 1.2. `value={commaSeparated}` 1.3. `value={multiline}`
 
 ```html
 <script type="text/babel">
@@ -157,4 +157,58 @@ state = {commaSeparated: '', multiline: ''}
 </script>
 ```
 
+Let's go ahead and try things out.
+
+![ezgif com-video-to-gif](https://user-images.githubusercontent.com/5876481/33981459-da52c500-e061-11e7-9116-c613dabf6bf5.gif)
+
+I am typing, and nothing's happening. What happens is, the moment that `you put a value prop on an input or a text area, it now becomes impossible for the user to update` that value themselves.
+
+You're telling React that I don't really care what the user is doing. :joy: I am in control of this value. :joy:
+
+**[03.]** define onChange
+
+You have to use this `onChange prop` to handle any time the `user is making a change`, and then you're in control of taking that change into account, to `update the value of the input`.
+
+```javascript
+handleCommaSeparatedChange = event => {
+  console.log('handleCommaSeparatedChange')
+  console.log(event.target.value)
+}
+```
+
+If we `console.log` the **event.target.value**, and then look at our developer console, then we can type a bunch of letters, and we're seeing that those letters are being updated, 
+
+![ezgif com-video-to-gif 1](https://user-images.githubusercontent.com/5876481/33981846-40120508-e063-11e7-8931-7182890baaf3.gif)
+
+_but the value of the input is never being updated_, because we're in control of that. We're going to use **this.setState**
+
+```javascript
+handleCommaSeparatedChange = event => {
+  this.setState({
+    commaSeparated: event.target.value
+  })
+}
+```
+
+Now, I can type.
+
+What's happening is, `every single time this change event happens`, we update the `commaSeparated state`, and when we call `setState`, that's going to `force a re-render`, and now, we are updating this commaSeparated state with whatever value the user typed in, and so `we're passing that back into the input value`, so React is updating that for us.
+
+[04.] update `multiline` based on `commaSeparated` state
+
+```javascript
+handleCommaSeparatedChange = event => {
+  const {value} = event.target
+  this.setState({
+    commaSeparated: value,
+    multiline: value
+      .split(',')             // split on the comma
+      .map(v => v.trim())     // map these values to value.trim, to trim any whitespace
+      .filter(Boolean)        // filter any that are empty strings
+      .join('\n'),            // join them all back together with a new line
+  })
+}
+```
+
+![ezgif com-video-to-gif 2](https://user-images.githubusercontent.com/5876481/33982618-fd74e71c-e065-11e7-877c-5d23f1455862.gif)
 
