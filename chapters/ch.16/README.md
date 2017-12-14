@@ -343,9 +343,11 @@ handleMultiSelectChange = event => {
   console.log({target: event.target})
 }
 ```
-When I pop open my developer tools here, we see all of our options available right here. 
+**[1.]** When I pop open my developer tools here, we see all of our options available right here. 
 <img width="722" alt="screen shot 2017-12-14 at 1 40 01 am" src="https://user-images.githubusercontent.com/5876481/33985547-cdcc601c-e06f-11e7-8655-07eed0f4dcec.png">
-There's also an options array available here, that shows us all the options.
+
+**[2.]** There's also an options array available here, that shows us all the options.
 <img width="718" alt="screen shot 2017-12-14 at 1 41 28 am" src="https://user-images.githubusercontent.com/5876481/33985587-f120e998-e06f-11e7-98de-9df133fb8990.png">
-Then there's this really handy **selected options array**. That's the one that we're going to be looking at.
+
+**[3.]** Then there's this really handy **selected options array**. That's the one that we're going to be looking at.
 <img width="716" alt="screen shot 2017-12-14 at 1 42 44 am" src="https://user-images.githubusercontent.com/5876481/33985668-21632986-e070-11e7-9af5-8c3b13040db4.png">
