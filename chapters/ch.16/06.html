@@ -48,7 +48,14 @@
     }
 
     handleMultiSelectChange = event => {
-      console.log({target: event.target})
+      const allVals = Array.from(
+        event.target.selectedOptions,
+      ).map(o => o.value)
+      this.setState({
+        multiSelect: allVals,
+        multiline: allVals.join('\n'),
+        commaSeparated: allVals.join(','),
+      })
     }
 
     render() {

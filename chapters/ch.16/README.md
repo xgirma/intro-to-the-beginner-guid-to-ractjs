@@ -351,3 +351,25 @@ handleMultiSelectChange = event => {
 
 **[3.]** Then there's this really handy **selected options array**. That's the one that we're going to be looking at.
 <img width="716" alt="screen shot 2017-12-14 at 1 42 44 am" src="https://user-images.githubusercontent.com/5876481/33985668-21632986-e070-11e7-9af5-8c3b13040db4.png">
+
+### event.target.selectedOptions
+
+```javascript
+handleMultiSelectChange = event => {
+  const allVals = Array.from(
+    event.target.selectedOptions,
+  ).map(o => o.value)
+  this.setState({
+    multiSelect: allVals,
+    multiline: allVals.join('\n'),
+    commaSeparated: allVals.join(','),
+  })
+}
+```
+
+## Summary
+In review, to control the input values, we have to specify a value property on the input, and on the text area, we specify a value property also, even though in normal HTML, the text area is contents, the children of the text area would be the value. In React, we use the value prop.
+
+OnSelect, for the value, if it's multiple select, then you can use an array. If it's not, then you simply use the string for the option that's selected.
+
+Then, if you want to respond to when the user is trying to update that value, you're going to need an onChange event handler, then you use the event that is passed to your onChange event handler to know what the value should be updated to, based off of what the user is selecting.
