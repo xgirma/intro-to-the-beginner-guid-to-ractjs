@@ -314,9 +314,9 @@ handleCommaSeparatedChange = event => {
  
 ### updating the state
  
- ![ezgif com-video-to-gif 4](https://user-images.githubusercontent.com/5876481/33984060-2cd0d778-e06b-11e7-9ef5-382f7731b199.gif)
+![ezgif com-video-to-gif 6](https://user-images.githubusercontent.com/5876481/33985235-e6b2241e-e06e-11e7-9697-335789e90cac.gif)
  
- :rotating_light: That doesn't work, :rotating_light: because when the `multiline values change`, `we're not updating the state of the multiselect`. Let's go ahead and do that.
+:rotating_light: That doesn't work, :rotating_light: because when the `multiline values change`, `we're not updating the state of the multiselect`. Let's go ahead and do that.
  
  ```javascript
 handleMultilineChange = event => {
