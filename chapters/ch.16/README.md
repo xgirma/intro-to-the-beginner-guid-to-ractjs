@@ -212,3 +212,127 @@ handleCommaSeparatedChange = event => {
 
 ![ezgif com-video-to-gif 2](https://user-images.githubusercontent.com/5876481/33982618-fd74e71c-e065-11e7-877c-5d23f1455862.gif)
 
+[04.] update `commaSeparated` based on `multiline` state
+
+Now, let's do the opposite. If I type grape, looks like I'm typing in here, and nothing's happening. That's because we're in control of the text area, and we're not doing anything when the text area change event is happening. Let's go ahead and do that here.
+
+```javascript
+handleMultilineChange = event => {
+  const {value} = event.target
+  this.setState({
+    multiline: value,
+    commaSeparated: value
+      .split('\n')
+      .map(v => v.trim())
+      .filter(Boolean)
+      .join(','),
+  })
+}
+```
+
+![ezgif com-video-to-gif 3](https://user-images.githubusercontent.com/5876481/33983300-811b5fae-e068-11e7-8cc6-803e3b10bb8b.gif)
+
+## controlling OnSelect
+
+OnSelect element, it's a **little bit unique**, in that we set the value here, and the **value that you set on a multiple select will be an array** `value={[]}`. If it's not multiple, then you can simply put the `string value` of the option based on the value `value={"""}`. For us, we are doing multiple, so we will do an array here. 
+
+Let's store that in state.
+
+```html
+<div>
+    <label>
+      multiSelect values:
+      <br />
+      <select
+        multiple
+        value={multiSelect}
+        size={MyFancyForm.availableOptions.length}
+        onChange={
+          this.handleMultiSelectChange
+        }
+      >
+        {MyFancyForm.availableOptions.map(
+          optionValue => (
+            <option
+              key={optionValue}
+              value={optionValue}
+            >
+              {optionValue}
+            </option>
+          ),
+        )}
+      </select>
+    </label>
+</div>
+```
+We'll do multi-select, and then in our de-structuring of the state
+
+```javascript
+{commaSeparated, multiline, multiSelect} = this.state
+```
+Then we will initialize that right here with an empty array.
+```html
+state = {commaSeparated: '', multiline: '', multiSelect: []}
+```
+
+before.
+```javascript
+handleCommaSeparatedChange = event => {
+  const {value} = event.target
+  
+  this.setState({
+    commaSeparated: value,
+    multiline: value
+      .split(',')
+      .map(v => v.trim())
+      .filter(Boolean)
+      .join('\n'),
+  })
+}
+```
+
+after.
+```javascript
+handleCommaSeparatedChange = event => {
+  const {value} = event.target
+  const allValls = value
+    .split(',')
+    .map(v => v.trim())
+    .filter(Boolean)
+
+  this.setState({
+    commaSeparated: value,
+    multiline: allValls
+      .join('\n'),
+    multiSelect: allValls
+      .filter(v => MyFancyForm.availableOptions.includes(v))
+  })
+}
+```
+
+ We're going to say filter each value to be one that is contained in our `availableOptions`. We'll say `.filter(v => MyFancyForm.availableOptions.includes(v))`.
+ 
+### updating the state
+ 
+ ![ezgif com-video-to-gif 4](https://user-images.githubusercontent.com/5876481/33984060-2cd0d778-e06b-11e7-9ef5-382f7731b199.gif)
+ 
+ :rotating_light: That doesn't work, :rotating_light: because when the `multiline values change`, `we're not updating the state of the multiselect`. Let's go ahead and do that.
+ 
+ ```javascript
+handleMultilineChange = event => {
+  const {value} = event.target
+  const allValls = value
+    .split('\n')
+    .map(v => v.trim())
+    .filter(Boolean)
+  this.setState({
+    multiline: value,
+    commaSeparated: allValls
+      .join(','),
+    multiSelect: allValls
+      .filter(v => MyFancyForm.availableOptions.includes(v)),
+  })
+}
+```
+
+### select using the multiSelect
