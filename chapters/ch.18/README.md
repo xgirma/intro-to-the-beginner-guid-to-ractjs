@@ -92,7 +92,8 @@ componentDidMount(){
 }
 
 render () {
-  return this.state.error? 'Error occur' : this.state.loaded? this.state.company || ' Unknown company' : '...'
+  return this.state.error? 'Error occur' 
+    : this.state.loaded? this.state.company || ' Unknown company' : '...'
 }
 ```
 
