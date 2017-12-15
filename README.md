@@ -73,3 +73,6 @@ In this lesson we'll talk about controlling the value for `inputs`, `textareas`,
       
 In this lesson we're reminded that JSX is simply JavaScript and to render a list you can use the array method `.map` to map an array to React elements. However, if you don't use the `key` prop correctly, it can lead to unexpected results, so `we explore what can happen and how to use the key prop correctly`.
 
+[18.  Make HTTP Requests with React](https://github.com/xgirma/intro-to-the-beginner-guid-to-ractjs/tree/ch.18/chapters/ch.18)
+Often to get user data `you'll make an AJAX request using axios or the fetch API`. In this lesson we'll get a GitHub user's company using GitHub's GraphQL API using React's componentDidMount lifecycle method.
+
