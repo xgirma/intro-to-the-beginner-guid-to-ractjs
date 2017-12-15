@@ -76,3 +76,7 @@ In this lesson we're reminded that JSX is simply JavaScript and to render a list
 [18.  Make HTTP Requests with React](https://github.com/xgirma/intro-to-the-beginner-guid-to-ractjs/tree/ch.18/chapters/ch.18)
 Often to get user data `you'll make an AJAX request using axios or the fetch API`. In this lesson we'll get a GitHub user's company using GitHub's GraphQL API using React's componentDidMount lifecycle method.
 
+[19. Build and deploy a React Application](https://github.com/xgirma/intro-to-the-beginner-guid-to-ractjs/tree/ch.19/chapters/ch.19)
+
+In this lesson we'll see how simple it is to **prototype** a React application right in your browser using **CodeSandbox.io**, then to **download** that application locally and use the **react-scripts** which are setup automatically to develop and build the application for production. We'll wrap up by deploying the application to **Netlify** (using a free account) for the world to see.
+
