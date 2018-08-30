@@ -7,12 +7,12 @@
 <script type="text/babel">
   class NameForm extends React.Component {
     handleSubmit = (event) => {
-      event.preventDefault()
-      console.log({target: event.target}) // { target: form }
-      console.log(event.target[0].value) // test
-      console.log(event.target.elements.username.value) // test
-      console.log(this.inputNode.value) // test
-    }
+      event.preventDefault();
+      console.log({target: event.target}); /* target: form */
+      console.log(event.target[0].value); /* test */
+      console.log(event.target.elements.username.value); /* test */
+      console.log(this.inputNode.value); /* test */
+    };
 
     render () {
       return (

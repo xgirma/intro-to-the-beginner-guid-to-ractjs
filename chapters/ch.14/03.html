@@ -7,16 +7,16 @@
 <script type="text/babel">
   class NameForm extends React.Component {
     handleSubmit = (event) => {
-      event.preventDefault()
-      console.log({target: event.target}) // { target: form }
-      console.log(event.target[0].value) // test
+      event.preventDefault();
+      console.log({target: event.target}); /* target: form */
+      console.log(event.target[0].value);  /* test */
     }
 
     render () {
       return (
         <form onSubmit={this.handleSubmit}>
           <label>
-            Name: <input type="text" /> // typed test
+            Name: <input type="text" /> { /* typed test */ }
           </label>
           <button type="submit">Submit</button>
         </form>
